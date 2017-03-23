@@ -18,6 +18,7 @@ ggplot(titanic, aes(x = factor(Pclass), fill = factor(Sex))) +
 # Used jitter to make sense of the over populated data
 posn.j <- position_jitter(0.5, 0)
 
+
 # Plotted Age on y axis and added extra aesthetics to the geom_jitter function. Looks like females between 20-40 yrs old survived more than men
 ggplot(titanic, aes(x = factor(Pclass), y = Age, col = factor(Sex))) +
   geom_jitter(size = 3, alpha = 0.5, position = posn.j) +
